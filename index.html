@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-bold text-indigo-700 mb-2">Subject Manager</h1>
+            <p class="text-gray-600">Organize your academic materials efficiently</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <!-- EG Card -->
+            <div class="subject-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-ruler-combined text-5xl text-blue-500"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-center text-gray-800 mb-2">Engineering Graphics</h2>
+                    <a href="eg.html" class="block w-full py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white text-center rounded-lg transition-colors duration-300">
+                        Open
+                    </a>
+                </div>
+            </div>
+
+            <!-- LAC Card -->
+            <div class="subject-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-language text-5xl text-green-500"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-center text-gray-800 mb-2">Language & Communication</h2>
+                    <a href="lac.html" class="block w-full py-2 px-4 bg-green-500 hover:bg-green-600 text-white text-center rounded-lg transition-colors duration-300">
+                        Open
+                    </a>
+                </div>
+            </div>
+
+            <!-- DS Card -->
+            <div class="subject-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-database text-5xl text-purple-500"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-center text-gray-800 mb-2">Data Structures</h2>
+                    <a href="ds.html" class="block w-full py-2 px-4 bg-purple-500 hover:bg-purple-600 text-white text-center rounded-lg transition-colors duration-300">
+                        Open
+                    </a>
+                </div>
+            </div>
+
+            <!-- ECE Card -->
+            <div class="subject-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-microchip text-5xl text-red-500"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-center text-gray-800 mb-2">Electronics Engineering</h2>
+                    <a href="ece.html" class="block w-full py-2 px-4 bg-red-500 hover:bg-red-600 text-white text-center rounded-lg transition-colors duration-300">
+                        Open
+                    </a>
+                </div>
+            </div>
+
+            <!-- EEE Card -->
+            <div class="subject-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bolt text-5xl text-yellow-500"></i>
+                    </div>
+                    <h2 class="text-xl font-semibold text-center text-gray-800 mb-2">Electrical Engineering</h2>
+                    <a href="eee.html" class="block w-full py-2 px-4 bg-yellow-500 hover:bg-yellow-600 text-white text-center rounded-lg transition-colors duration-300">
+                        Open
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
